@@ -1,0 +1,507 @@
+/* Reseta as margens e o padding padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Helvetica;
+    line-height: 1.6;
+}
+
+/* Barra de navegação fixa */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    color: #ffffff;
+}
+
+/* Estilo para o logo */
+.logo {
+    display: flex;
+    align-items: center; /* Garante que logo e texto fiquem centralizados verticalmente */
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+}
+
+.texto {
+    color: #004AAD;
+    font-size: 22px;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+/* Estilo para o menu de navegação */
+.menu {
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #004AAD;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Helvetica;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Animação de hover no menu */
+.menu a:hover {
+    color: #1A9047; /* Tom verde ao passar o mouse */
+}
+
+/* Estilos para os botões de autenticação */
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .btn-login {
+    background-color: #ffffff;
+    color: #1A9047;
+    border: 2px solid #333;
+    font-size: 22px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: Helvetica;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .btn-signup {
+    background-color: #1A9047;
+    color: white;
+    border: 2px solid #333;
+    font-size: 22px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: Helvetica;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+/* Animação de hover nos botões */
+.auth-buttons .btn-login:hover, .auth-buttons .btn-signup:hover {
+    background-color: #2BC866; /* Escurece o tom de verde ao passar o mouse */
+}
+
+/* Estilos para as seções da página */
+section {
+    padding: 60px 20px;
+    margin-top: 60px; /* Compensar a altura da barra de navegação fixa */
+}
+
+#home {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Título da página Home */
+.home-title {
+    font-size: 60px;
+    color: #2BC866;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 45px;
+    margin-top: 25px;
+}
+
+/* Caixa de texto e botão de rastreio */
+.tracking-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+/* Campo de texto para rastreio */
+.tracking-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4d4e4d;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 600px;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Botão de rastreio */
+.tracking-button {
+    background-color: #4d4e4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Animação de hover no botão */
+.tracking-button:hover {
+    background-color: #2BC866,
+}
+
+/* Ícone no botão */
+.button-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Imagem de rastreamento na parte inferior */
+.image-container {
+    margin-top: 200px;
+}
+
+.tracking-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#sobre-nos {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Título da página Home */
+.sobre-nos-title {
+    font-size: 50px;
+    color: #2BC866;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sobre-nos-description {
+    font-size: 20px;
+    color: #4d4e4d;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.sobre-nos-details {
+    display: flex; /* Flexbox para as colunas */
+    justify-content: center; /* Centraliza colunas horizontalmente */
+    margin-bottom: 40px; /* Espaço abaixo das imagens */
+}
+
+.sobre-nos-item{
+    flex: 1; /* Faz cada coluna ocupar espaço igual */
+    max-width: 300px; /* Largura máxima de cada coluna */
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+    margin: 0 80px; /* Margem lateral entre as colunas */
+}
+
+.imagem {
+    width: 100%; /* Imagem ocupa 100% da coluna */
+    height: auto; /* Mantém a proporção */
+}
+
+.sobre-nos-item-title {
+    color: #2BC866;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px 0; /* Margem acima e abaixo do título */
+}
+
+.sobre-nos-item-description {
+    font-size: 16px;
+    color: #4d4e4d /* Cor mais clara para descrição */
+}
+
+.signup-now{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sobre-nos-subtitle {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 30px;
+    color: #2BC866;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.signup-now-button {
+    background-color: #1A9047; /* Cor do fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Helvetica, sans-serif; /* Fonte Helvetica */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição de cor */
+}
+
+/* Animação de hover no botão */
+.signup-now-button:hover {
+    background-color: #2BC866; /* Cor ao passar o mouse */
+}
+
+#parceiros {
+    background-color: #ffffff;
+    padding: 130px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.parceiros-background{
+    background-color: #2BC866; /* Fundo verde */
+    width: 100vw;
+    padding: 130px 0;
+    margin: -20px;
+}
+
+.parceiros-content {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo dentro do bloco verde */
+    padding: 0 20px; /* Pequeno padding para dar espaçamento lateral */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem para telas menores */
+}
+
+.parceiros-items {
+    flex: 1; /* Texto ocupa 50% do espaço */
+    margin-right: 20px;
+}
+
+.parceiros-item-text {
+    margin-bottom: 20px; /* Espaçamento entre o texto e os logos */
+}
+
+.parceiros-title {
+    font-size: 45px;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.parceiros-description {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.parceiros-text {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.parceiros-item-logo {
+    background-color: white; /* Fundo branco */
+    padding: 20px;
+    border-radius: 50px; /* Bordas arredondadas no retângulo branco */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-item {
+    width: 60px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.logo-item img {
+    width: 80px;
+    height: 20px;
+}
+
+.parceiros-item-image img {
+    flex: 1; /* Ocupa 50% do espaço */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parceiros-imagem {
+    max-width: 100%; /* A imagem ocupa até 100% da coluna direita */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+#ajuda {
+    background-color: #ffffff;
+    padding: 100px 20px; 
+}
+
+/* Parte superior (imagem e texto) */
+.ajuda-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ajuda-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px; /* Limitar a largura da imagem */
+}
+
+.ajuda-content-text {
+    max-width: 50%;
+    margin-left: 20px;
+    text-align: left; /* Alinhar o texto à direita */
+}
+
+.ajuda-content-text h2 {
+    font-size: 36px;
+    max-width: 365px;
+    margin-bottom: 10px;
+    color: #2BC866;
+}
+
+.ajuda-content-text p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Parte inferior com as caixas e setas */
+.ajuda-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para as setas de navegação */
+.ajuda-seta-esquerda, .ajuda-seta-direita {
+    font-size: 36px;
+    color: #1A9047;
+    cursor: pointer;
+    padding: 20px;
+    transition: color 0.3s;
+}
+
+.ajuda-seta-esquerda:hover, .ajuda-seta-direita:hover {
+    color: #2BC866;
+}
+
+/* Estilo das caixas de ajuda */
+.ajuda-caixas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80%; /* Limita o espaço das caixas */
+    padding: 20px;
+}
+
+.ajuda-caixa {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    flex: 1;
+    max-width: 250px; /* Define a largura máxima de cada caixa */
+    border: 2px solid #2BC866;
+    transition: background-color 0.3s;
+}
+
+.ajuda-caixa:hover {
+    background-color: #eeeded; /* Fundo cinza claro ao passar o mouse */
+}
+
+.ajuda-caixa h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #2BC866;
+}
+
+.ajuda-caixa p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.ajuda-caixa li {
+    font-size: 14px;
+    color: #666;
+}
+
+.ajuda-icone img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .ajuda-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ajuda-imagem img {
+        max-width: 80%;
+    }
+
+    .ajuda-texto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ajuda-caixas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ajuda-caixa {
+        max-width: 90%;
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

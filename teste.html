@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE FRONTEND</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegação fixa -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/logo.png" alt="Logo da Empresa">
+                <span class="texto">Rastreio Xpress</span>
+            </div>
+            <!-- Menu de navegação -->
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+            </ul>
+            <!-- Botões de ação -->
+            <div class="auth-buttons">
+                <button class="btn-login">Entrar</button>
+                <button class="btn-signup">Cadastrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home">
+        <div class="home-content">
+            <!-- Título centralizado -->
+            <h2 class="home-title">Rastreie seu pedido!</h2>
+            
+            <!-- Caixa de texto para o código de rastreio -->
+            <div class="tracking-box">
+                <input type="text" placeholder="Código de rastreamento" class="tracking-input">
+                <button class="tracking-button">
+                    <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/icons8-localização-32.png" alt="Ícone" class="button-icon"> Rastrear
+                </button>
+            </div>
+            
+            <!-- Imagem na parte inferior -->
+            <div class="image-container">
+                <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/boxes.svg" alt="Imagem de rastreamento" class="tracking-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos">
+        <div class="sobre-nos-content">
+            <!-- Título centralizado -->
+            <h2 class="sobre-nos-title">Veja como o Rastreio Express pode facilitar sua rotina</h2> 
+            <p class="sobre-nos-description">As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística</p>  
+            
+            <!-- Descrição sobre a empresa -->
+            <div class="sobre-nos-details">
+                <div class="sobre-nos-item">
+                    <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/search.svg" alt="Imagem 1" class="imagem">
+                    <h3 class="sobre-nos-item-title">Busque por uma encomenda</h3>
+                    <p class="sobre-nos-item-description">Use o Rastreio Express para buscar informações sobre suas encomendas. Basta colar o código de rastreio no campo de buscas e aproveitar</p>
+                </div>
+                <div class="sobre-nos-item">
+                    <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/phone_loc.svg" alt="Imagem 2" class="imagem">
+                    <h3 class="sobre-nos-item-title">Acompanhe suas encomendas</h3>
+                    <p class="sobre-nos-item-description">O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difíceis de entender</p>
+                </div>
+                <div class="sobre-nos-item">
+                    <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/notification_bell.svg" alt="Imagem 3" class="imagem">
+                    <h3 class="sobre-nos-item-title">Receba notificações</h3>
+                    <p class="sobre-nos-item-description">No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu e-mail</p>
+                </div>
+            </div>
+            
+            <!-- Texto sobre a empresa -->
+            <div class="signup-now">
+                <h2 class="sobre-nos-subtitle">O Rastreio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e objetiva, sem enrolação</h2>
+                <button class="signup-now-button">CADASTRE-SE AGORA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Parceiros -->
+    <section id="parceiros">
+        <div class="parceiros-background">
+            <div class="parceiros-content">
+                <div class="parceiros-items">
+                    <div class="parceiros-item-text">
+                        <h2 class="parceiros-title">A plataforma de rastreamento mais completa do mercado</h2>
+                        <p class="parceiros-description">O Melhor Rastreio controla todos os envios postados na Azul Cargo Express e Correios</p>
+                        <p class="parceiros-text">Porém quem faz envios com etiquetas gerada na plataformado Melhor Envio também consegue rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil, e LATAM Cargo</p>
+                    </div>
+                    <div class="parceiros-item-logo">
+                        <div class="logo-item"><img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/j&t.png" alt="Logo do parceiro 1"></div>
+                        <div class="logo-item"><img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/Azul_Cargo_Express_logo.png" alt="Logo do parceiro 2"></div>
+                        <div class="logo-item"><img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/buslog-logo.png" alt="Logo do parceiro 3"></div>
+                        <div class="logo-item"><img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/correios-logo.png" alt="Logo do parceiro 4"></div>
+                    </div>
+                </div>
+
+                <div class="parceiros-item-image">
+                    <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/image_green_background.PNG" alt="parceiros-imagem" class="parceiros-imagem">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Ajuda -->
+    <section id="ajuda">
+        <!-- Parte superior com imagem e texto -->
+        <div class="ajuda-content">
+            <div class="ajuda-imagem">
+                <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/need_help.png" alt="Imagem de ajuda">
+            </div>
+            <div class="ajuda-content-text">
+                <h2>Precisa de ajuda com algum rastreio?</h2> 
+                <p>Veja o que fazer em cada um dos casos:</p>  
+            </div>
+        </div>
+
+        <!-- Parte inferior com caixas e setas -->
+        <div class="ajuda-items">
+            <!-- Setas de navegação -->
+            <div class="ajuda-seta-esquerda">
+                &#10094; <!-- Caractere da seta para a esquerda -->
+            </div>
+
+            <!-- Quatro caixas de ajuda -->
+            <div class="ajuda-caixas">
+                <div class="ajuda-caixa">
+                    <div class="ajuda-icone">
+                        <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/ampulheta.png" alt="Ícone 1">
+                    </div>
+                    <h3>Estou esperando uma encomenda</h3>
+                    <p>O remetente é a única pessoa que pode resolver problemas relacionados ao rastreio.</p>
+                    <p>Sugerimos que peça para a pessoa responsável pelo envio entrar em contato com a gente seguindo as instruções para lojistas.</p>
+                </div>
+                <div class="ajuda-caixa">
+                    <div class="ajuda-icone">
+                        <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/cubo.png" alt="Ícone 2">
+                    </div>
+                    <h3>Enviei um pacote com etiqueta do Melhor Envio</h3>
+                    <p>É muito fácil encontrar ajuda.<br>Veja só:</p>
+                    <li>Entre na conta Melhor Envio</li>
+                    <li>Vá até a opção Ajuda</li>
+                    <li>Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa</li>
+                </div>
+                <div class="ajuda-caixa">
+                    <div class="ajuda-icone">
+                        <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/recibo.png" alt="Ícone 3">
+                    </div>
+                    <h3>Comprei uma etiqueta diretamente com a transportadora</h3>
+                    <p>Sugerimos que entre em contato com a empresa responsável pelo envio.</p>
+                </div>
+                <div class="ajuda-caixa">
+                    <div class="ajuda-icone">
+                        <img src="/home/gabriel/Documentos/projetos/teste_grupo_pegazus/TESTE FRONT END/Images/dinheiro.png" alt="Ícone 4">
+                    </div>
+                    <h3>Eu vou pagar alguma taxa de uso ou mensalidade?</h3>
+                    <p>Não! O Melhor Rastreio é totalmente gratuito e não cobra nenhuma mensalidade ou taxa pelos serviços.</p>
+                </div>
+            </div>
+
+            <!-- Setas de navegação -->
+            <div class="ajuda-seta-direita">
+                &#10095; <!-- Caractere da seta para a direita -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
